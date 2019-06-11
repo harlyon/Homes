@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import swal from "sweetalert";
 import FileUploader from "react-firebase-file-uploader";
 import firebase from "../Firebase";
 import Login from "./Login";
@@ -42,6 +43,27 @@ class AddProperties extends Component {
     });
   }
 
+  validateForm = e => {
+    e.preventDefault();
+    if (
+      this.state.title !== "" &&
+      this.state.description !== "" &&
+      this.state.address !== "" &&
+      this.state.city !== "" &&
+      this.state.country !== "" &&
+      this.state.garages !== "" &&
+      this.state.bedroom !== "" &&
+      this.state.bathroom !== "" &&
+      this.state.price !== "" &&
+      this.state.type !== "" &&
+      this.state.image !== ""
+    ) {
+      this.onSubmit();
+    } else {
+      swal("Error", "All fields must be filled in", "error");
+    }
+  };
+
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
@@ -63,8 +85,7 @@ class AddProperties extends Component {
       .then(url => this.setState({ image: { avatarURL: url } }));
   };
 
-  onSubmit = e => {
-    e.preventDefault();
+  onSubmit = () => {
     const {
       title,
       description,
@@ -126,7 +147,7 @@ class AddProperties extends Component {
         {this.state.user ? (
           <section className="section-padding">
             <div className="col-lg-12 col-md-12">
-              <form onSubmit={this.onSubmit} autoComplete="off">
+              <form onSubmit={this.validateForm} autoComplete="off">
                 <div className="col-lg-5 col-md-5 mx-auto">
                   <div className="card padding-card  no-radius border">
                     <div className="card-body">
@@ -290,10 +311,8 @@ class AddProperties extends Component {
                           )}
                           {this.state.image.progress && (
                             <div>
-                              <br />
-                              <br />
-                              <div className="spinner-grow" role="status">
-                                <span className="sr-only">Loading...</span>
+                              <div className="container">
+                                <div className="spin text-center" />
                               </div>
                             </div>
                           )}

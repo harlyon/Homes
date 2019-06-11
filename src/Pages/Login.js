@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import swal from "sweetalert";
 import { Redirect } from "react-router-dom";
 import firebase from "../Firebase";
 
@@ -13,8 +14,16 @@ class Login extends Component {
     this.setState({ [e.target.name]: e.target.value });
   };
 
-  submitForm = e => {
+  validateForm = e => {
     e.preventDefault();
+    if (this.state.email !== "" && this.state.password !== "") {
+      this.submitForm();
+    } else {
+      swal("Error", "All fields must be filled in", "error");
+    }
+  };
+
+  submitForm = () => {
     firebase
       .auth()
       .signInWithEmailAndPassword(this.state.email, this.state.password)
@@ -47,7 +56,7 @@ class Login extends Component {
                 <div className="card padding-card no-radius border t-align-l">
                   <div className="card-body">
                     <h5 className="card-title mb-4">Login</h5>
-                    <form onSubmit={this.submitForm} autoComplete="off">
+                    <form onSubmit={this.validateForm} autoComplete="off">
                       <div className="form-group">
                         <label>
                           Email Address <span className="text-danger">*</span>

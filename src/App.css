@@ -1,10 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   line-height: 25px;
   color: #333333;
+}
+
+.spin {
+  height: 40px;
+  width: 40px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  border-top: 2px solid #1D9AF2;
+  border-right: 2px solid transparent;
+  border-bottom: none;
+  border-left: none;
+  animation: spinner5 700ms linear infinite;
+}
+
+@keyframes spinner5 {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .samar-slider {
@@ -334,8 +351,7 @@ nav.navbar {
   right: 0;
 }
 
-nav.navbar .navbar-nav .nav-link,
-nav.navbar .navbar-nav .nav-link:hover {
+nav.navbar .navbar-nav .nav-link, nav.navbar .navbar-nav .nav-link:hover {
   color: #fff;
   font-weight: normal;
   padding: 25px 18px;
@@ -388,8 +404,7 @@ nav.navbar .navbar-nav .nav-link:hover {
   border-color: #ff6633;
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
+.btn-primary:hover, .btn-primary:focus {
   background-color: transparent;
   border-color: #e7e7e7 !important;
   color: #999;
@@ -415,8 +430,7 @@ nav.navbar .navbar-nav .nav-link:hover {
   /* border-radius: 35px; */
 }
 
-.btn-secondary:hover,
-.btn-secondary:focus {
+.btn-secondary:hover, .btn-secondary:focus {
   background-color: #003366 !important;
   border-color: #003366 !important;
   color: #fff;
@@ -429,8 +443,7 @@ nav.navbar .navbar-nav .nav-link:hover {
   color: #ffffff;
 }
 
-.btn-outline-warning:hover,
-.btn-outline-warning:focus {
+.btn-outline-warning:hover, .btn-outline-warning:focus {
   background-color: #ff6633 !important;
   border-color: #ff6633 !important;
   color: #ffffff;
@@ -442,8 +455,7 @@ nav.navbar .navbar-nav .nav-link:hover {
   color: #ffffff;
 }
 
-.btn-warning:hover,
-.btn-warning:focus {
+.btn-warning:hover, .btn-warning:focus {
   background-color: #ff6633 !important;
   border-color: #ff6633 !important;
   color: #ffffff;
@@ -468,15 +480,13 @@ nav.navbar .navbar-nav .nav-link:hover {
   color: #0C8B89;
 }
 
-.btn-success:hover,
-.btn-success:focus {
+.btn-success:hover, .btn-success:focus {
   background-color: #4BE4E2 !important;
   border-color: #4BE4E2 !important;
   color: #0C8B89 !important;
 }
 
-.btn-success.disabled,
-.btn-success:disabled {
+.btn-success.disabled, .btn-success:disabled {
   background-color: #4BE4E2;
   border-color: #4BE4E2;
   color: #0C8B89;
@@ -495,13 +505,11 @@ nav.navbar .navbar-nav .nav-link:hover {
   color: #0C8B89;
 }
 
-.btn-outline-success.focus,
-.btn-outline-success:focus {
+.btn-outline-success.focus, .btn-outline-success:focus {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
-.btn-outline-success.disabled,
-.btn-outline-success:disabled {
+.btn-outline-success.disabled, .btn-outline-success:disabled {
   background-color: transparent;
   color: #4BE4E2;
 }
@@ -660,8 +668,9 @@ header.masthead h1 {
 }
 
 /* Mobile Media */
+
 @media screen and (min-device-width: 768px) and (max-device-width: 414px) and (-webkit-min-device-pixel-ratio: 1) {
-   .slider-form {
+  .slider-form {
     padding-top: 530px;
   }
 }
@@ -670,48 +679,38 @@ header.masthead h1 {
   .slider-form .nav-tabs a {
     margin: 0 0 5px 15px;
   }
-
   .slider-form h2 {
     margin: 0 0 20px;
     padding: 0 15px;
   }
-
   .container {
     max-width: 100%;
   }
-
   .section-padding {
     padding: 50px 0;
   }
-
   nav.navbar {
     padding: 0px;
   }
-
   .navbar-toggler {
     padding: 2px 5px;
   }
-
   nav.navbar .navbar-nav .nav-link {
     border-bottom: 1px solid #ececec;
     padding: 10px 12px;
     text-align: center;
   }
-
   .main-nav-right {
     text-align: center;
   }
-
   nav.navbar .dropdown-menu .dropdown-item {
     font-size: 13px;
     padding: 7px 20px;
     text-align: center;
   }
-
   .inner-header {
     padding-top: 30% !important;
   }
-
   .carousel-indicators {
     left: 0;
     margin: 0;
@@ -720,95 +719,71 @@ header.masthead h1 {
     bottom: 16px;
     display: none;
   }
-
   .banner-list {
     padding: 0px 15px !important;
   }
-
   .banner-list h6 {
     font-size: 13px;
     font-weight: 100;
     line-height: 21px;
     margin: 0 0 27px !important;
   }
-
   .banner-list .card {
     margin-top: 30px;
   }
-
-  .inner-page-form,
-  .slider-form {
+  .inner-page-form, .slider-form {
     bottom: 1px !important;
     left: 1px;
     right: 1px;
     top: auto !important;
   }
-
-  .inner-page-form .container,
-  .slider-form .container {
+  .inner-page-form .container, .slider-form .container {
     padding: 0;
   }
-
-  .carousel-control-prev,
-  .carousel-control-next {
+  .carousel-control-prev, .carousel-control-next {
     display: none;
   }
-
   .property-single-title {
     text-align: center;
   }
-
   .property-single-title .text-right {
     text-align: center !important;
   }
-
   .property-single-title .footer-social {
     margin: 20px 0 0;
   }
-
   .btn {
     font-size: 13px;
     font-weight: bold;
     padding: 9px 27px;
   }
-
   .tab-view .nav-link {
     border-bottom: 2px solid #ececec;
     margin: 0 1px;
     padding: 15px 14px;
     position: relative;
   }
-
   h1 {
     font-size: 34px;
   }
-
   h2 br {
     display: none;
   }
-
-  .padding-card .card-body,
-  .sidebar-card .card-body {
+  .padding-card .card-body, .sidebar-card .card-body {
     padding: 18px;
   }
-
-  .card-list-view .card-body,
-  .card-list-view .card-footer {
+  .card-list-view .card-body, .card-list-view .card-footer {
     padding: 18px;
   }
-
   .footer h4 {
     margin: 0 0 10px !important;
   }
-
   .footer h6 {
     margin: 30px 0 8px !important;
   }
-
   .samar_top_filter {
     text-align: center;
   }
-
   .samar_top_filter .float-right {
     float: none !important;
     margin: 3px 1px !important;
@@ -819,31 +794,25 @@ header.masthead h1 {
   .container {
     max-width: 100%;
   }
-
   nav.navbar {
     padding: 10px 15px;
   }
-
   .navbar-toggler {
     padding: 2px 5px;
   }
-
   nav.navbar .navbar-nav .nav-link {
     border-bottom: 1px solid #ececec;
     padding: 10px 12px;
     text-align: center;
   }
-
   .main-nav-right {
     text-align: center;
   }
-
   nav.navbar .dropdown-menu .dropdown-item {
     font-size: 13px;
     padding: 7px 20px;
     text-align: center;
   }
-
   .carousel-indicators {
     left: 0;
     margin: 0;
@@ -851,21 +820,15 @@ header.masthead h1 {
     right: 0;
     bottom: 16px;
   }
-
   .inner-header {
     padding-top: 20% !important;
   }
-
-  .padding-card .card-body,
-  .sidebar-card .card-body {
+  .padding-card .card-body, .sidebar-card .card-body {
     padding: 18px;
   }
-
-  .card-list-view .card-body,
-  .card-list-view .card-footer {
+  .card-list-view .card-body, .card-list-view .card-footer {
     padding: 18px;
   }
-
   .section-padding {
     padding: 60px 0;
   }
