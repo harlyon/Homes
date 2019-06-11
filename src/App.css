@@ -1,8 +1,125 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 25px;
+  color: #333333;
 }
 
-.App-logo {
+.samar-slider {
+  position: relative;
+}
+
+.samar-slider .carousel-item {
+  height: 100vh;
+  min-height: 560px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.samar-slider .carousel-item .overlay {
+  background: #003366 none repeat scroll 0 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.inner-header {
+  background: rgba(0, 0, 0, 0) url('http://giftechies.com/samar-real-estate/theme/img/slider/2.jpg') repeat scroll center top / 100% auto;
+  position: relative;
+  padding-top: 10% !important;
+}
+
+.inner-header h1 {
+  color: #fff !important;
+}
+
+.inner-header p {
+  color: #fff;
+}
+
+.inner-header a {
+  color: #ff6633;
+}
+
+.overlay {
+  background: #003366 none repeat scroll 0 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.inner-header::after {
+  background: #000 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.inner-header .container {
+  position: relative;
+  z-index: 9;
+}
+
+.property-single-slider {
+  border-radius: 0px;
+  text-align: left;
+  border: 1px solid #eee;
+}
+
+.padding-card .card-body {
+  padding: 35px;
+}
+
+.property-single-title-gallery {
+  background: #f6f6f6 none repeat scroll 0 0;
+  padding: 35px 0;
+  position: relative;
+}
+
+.slider-one {
+  background-image: url('http://giftechies.com/samar-real-estate/theme/img/slider/1.jpg') !important;
+}
+
+.slider-two {
+  background-image: url('http://giftechies.com/samar-real-estate/theme/img/slider/2.jpg') !important;
+}
+
+.slider-three {
+  background-image: url('http://giftechies.com/samar-real-estate/theme/img/slider/3.jpg') !important;
+}
+
+.section-padding {
+  padding: 50px 0;
+}
+
+.section-title h2 {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.line {
+  height: 3px;
+  background: #ff6633;
+  width: 12%;
+  margin: auto;
+}
+
+/* .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
@@ -27,7 +144,737 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+} */
+
+/*--------------------------Card Styles----------------------------------------*/
+
+.card {
+  border: medium none;
+  box-shadow: 0 5px 7px #e0e5e8;
+  margin-bottom: 30px;
+  /* border-radius: 70px; */
+  text-align: center;
 }
+
+.card-img {
+  position: relative;
+}
+
+.card-img-top {
+  border: 1px solid #f8f8f8;
+  padding: 5px;
+  border-radius: 30px;
+  width: 100%;
+  height: 220px;
+}
+
+.images-badge {
+  background: #fff none repeat scroll 0 0;
+  color: #ff6633;
+  font-size: 16px;
+  left: 20px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.22);
+  position: absolute;
+  right: auto !important;
+  z-index: 9;
+}
+
+.card-list {
+  border-radius: 35px;
+}
+
+.card-list .badge {
+  border-radius: 50px;
+  top: 20px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.22);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 6px 8px;
+  position: absolute;
+  right: 20px;
+  z-index: 9;
+}
+
+.card-list .card-body h2 {
+  font-size: 20px;
+  font-weight: bold;
+  background: rgb(255, 255, 255);
+  line-height: 39px;
+  margin-top: -49px !important;
+  z-index: 999999999;
+  position: relative;
+}
+
+.card-list .card-body .card-title {
+  font-size: 14px !important;
+  font-weight: 500;
+}
+
+.card-list .card-body .card-subtitle {
+  font-size: 13px;
+  font-weight: 500 !important;
+  color: #a7a7a7 !important;
+}
+
+.card-list .card-body .card-subtitle i {
+  color: #ff6633;
+  display: inline-block;
+  height: 20px;
+  line-height: 21px;
+  margin: 0 4px 0 0;
+  text-align: center;
+  width: 20px;
+  font-size: 20px;
+}
+
+.card-list .card-body h2 small {
+  font-size: 17px;
+}
+
+.card-list .card-footer span {
+  color: #666666;
+  font-size: 12px;
+  margin: 0 16px 0 0;
+}
+
+.card-list .card-footer span i {
+  color: #000;
+  margin: 0 2px 0 0;
+}
+
+.card-footer {
+  background: #ffffff none repeat scroll 0 0;
+  border-color: #eeeeee;
+  border-bottom: 2px solid #ffffff;
+}
+
+/*--------------------------Card Styles Ends-----------------------------------*/
+
+/*----------------Form Upload------------------------*/
+
+.property-features-add .custom-control {
+  margin: 7px 0;
+}
+
+.fuzone {
+  background: #f9f9f9 none repeat scroll 0 0;
+  border: 2px dashed #eeeeee;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  min-height: 150px;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s linear 0s;
+  width: 100%;
+}
+
+.fuzone .fu-text {
+  color: #98aab8;
+  font-size: 12px;
+  margin: 50px 0;
+  position: relative;
+  text-align: center;
+}
+
+.fuzone .fu-text i {
+  display: inline-block;
+  font-size: 54px;
+  padding-bottom: 10px;
+  transition: all 0.3s linear 0s;
+  width: 100%;
+}
+
+.fuzone input {
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/*---------------Form Upload------------------*/
+
+.user-side-bar .active {
+  background: #036;
+  border-color: #036;
+  border-left: 3px solid #f63;
+}
+
+.user-side-bar a span {
+  color: #f63;
+  padding-right: 9px;
+  font-size: 16px;
+}
+
+.bg-light {
+  background-color: #fff !important;
+  box-shadow: 0 5px 6px rgba(207, 216, 221, 0.38) !important;
+  z-index: 999;
+}
+
+.bg-danger {
+  background-color: #003366 !important;
+  /* border-radius: 51px;
+  margin: 25px auto; */
+  position: absolute;
+  z-index: 999;
+}
+
+nav.navbar {
+  padding: 0;
+  left: 0;
+  right: 0;
+}
+
+nav.navbar .navbar-nav .nav-link,
+nav.navbar .navbar-nav .nav-link:hover {
+  color: #fff;
+  font-weight: normal;
+  padding: 25px 18px;
+  text-transform: uppercase;
+}
+
+.dropdown-menu {
+  border: medium none;
+  border-radius: 0;
+  margin: 0;
+}
+
+.dropdown-menu .dropdown-item {
+  font-size: 13px;
+  padding: 7px 20px;
+}
+
+.main-nav-right .btn {
+  padding: 7px 16px;
+  border-radius: 50px;
+}
+
+.main-nav-right .list-inline-item {
+  margin: 0;
+}
+
+/* header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("http://giftechies.com/samar-real-estate/theme/img/list/1.png") no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem
+} */
+
+.btn {
+  /* border-radius: 35px; */
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.btn-lg {
+  color: #fff;
+  padding: 14px 40px;
+}
+
+.btn-primary {
+  background: #ff6633 none repeat scroll 0 0;
+  color: #fff;
+  border-color: #ff6633;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: transparent;
+  border-color: #e7e7e7 !important;
+  color: #999;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  background-image: none;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #ff6633;
+  border-color: #ff6633;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #ff6633 none repeat scroll 0 0;
+  border-color: #ff6633;
+  color: #fff;
+  /* border-radius: 35px; */
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #003366 !important;
+  border-color: #003366 !important;
+  color: #fff;
+}
+
+.btn-outline-warning {
+  background-color: transparent;
+  background-image: none;
+  border-color: #ff6633;
+  color: #ffffff;
+}
+
+.btn-outline-warning:hover,
+.btn-outline-warning:focus {
+  background-color: #ff6633 !important;
+  border-color: #ff6633 !important;
+  color: #ffffff;
+}
+
+.btn-warning {
+  background-color: #ff6633;
+  border-color: #ff6633;
+  color: #ffffff;
+}
+
+.btn-warning:hover,
+.btn-warning:focus {
+  background-color: #ff6633 !important;
+  border-color: #ff6633 !important;
+  color: #ffffff;
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  background-image: none;
+  border-color: #b71c1c;
+  color: #b71c1c;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #b71c1c;
+  border-color: #b71c1c;
+  color: #fff;
+}
+
+.btn-success {
+  background-color: #63F2F0;
+  border-color: #63F2F0;
+  color: #0C8B89;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+  background-color: #4BE4E2 !important;
+  border-color: #4BE4E2 !important;
+  color: #0C8B89 !important;
+}
+
+.btn-success.disabled,
+.btn-success:disabled {
+  background-color: #4BE4E2;
+  border-color: #4BE4E2;
+  color: #0C8B89;
+}
+
+.btn-outline-success {
+  background-color: transparent;
+  background-image: none;
+  border-color: #63F2F0;
+  color: #63F2F0;
+}
+
+.btn-outline-success:hover {
+  background-color: #4BE4E2;
+  border-color: #4BE4E2;
+  color: #0C8B89;
+}
+
+.btn-outline-success.focus,
+.btn-outline-success:focus {
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+.btn-outline-success.disabled,
+.btn-outline-success:disabled {
+  background-color: transparent;
+  color: #4BE4E2;
+}
+
+.text-success {
+  color: #64ddba !important;
+}
+
+.list-icon {
+  margin-bottom: 33px;
+}
+
+.list-icon i {
+  background: #003366 none repeat scroll 0 0;
+  border-radius: 51px;
+  box-shadow: 0 5px 7px #c8d0f3;
+  color: #fff;
+  float: left;
+  font-size: 31px;
+  height: 52px;
+  line-height: 50px;
+  margin: 0 14px 0 0;
+  text-align: center;
+  width: 52px;
+}
+
+/* header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: .3
+}
+
+header.masthead h1 {
+  font-size: 2rem
+}
+
+@media (min-width:768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem
+  }
+
+  header.masthead h1 {
+    font-size: 3rem
+  }
+}  */
+
+.slider-form {
+  left: 15%;
+  position: absolute;
+  right: 15%;
+  top: 42%;
+}
+
+.slider-form h2 {
+  font-size: 46px;
+  letter-spacing: 1.4px;
+}
+
+/* .slider-form .nav-tabs a {
+  background: #fff none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 50px;
+  color: #003366;
+  font-weight: 600;
+  margin-right: 10px;
+  padding: 6px 23px;
+  position: relative;
+  text-transform: uppercase;
+} */
+
+/* .slider-form .nav-tabs {
+  border: medium none;
+  margin: auto auto 12px;
+  text-align: center;
+} */
+
+/* .slider-form .nav-tabs a.active {
+  background: #ff6633 none repeat scroll 0 0;
+  color: #fff;
+} */
+
+/* .slider-form .nav-tabs a.active:after {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #ff6633;
+  bottom: -6px;
+  content: "";
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 14px;
+} */
+
+.slider-form .tab-content {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+.slider-form .input-group-addon {
+  line-height: 58px;
+  position: absolute;
+  text-align: center;
+  width: 41px;
+  z-index: 9;
+}
+
+.slider-form .input-group-addon .mdi {
+  font-size: 18px;
+}
+
+.slider-form .select2-selection {
+  border: medium none !important;
+  border-radius: 0 !important;
+  height: auto !important;
+  padding: 15px 15px 15px 33px;
+}
+
+.slider-form .select2 {
+  width: 100% !important;
+  border-right: 1px solid rgba(204, 204, 204, 0.3);
+}
+
+.slider-form .form-control {
+  border: medium none !important;
+  border-radius: 0 !important;
+  height: auto !important;
+  padding: 19px 15px 19px 43px;
+  border-right: 1px solid rgba(204, 204, 204, 0.3) !important;
+  font-size: 13px;
+}
+
+.slider-form .select2-selection__arrow {
+  margin: 15px 12px 0;
+}
+
+.slider-form .btn {
+  font-size: 13px;
+  padding: 18px 8px;
+}
+
+.select2-dropdown {
+  border: medium none;
+  border-radius: 0;
+}
+
+.inner-page-form .input-group {
+  padding: 1px;
+}
+
+/* Mobile Media */
+@media screen and (min-device-width: 768px) and (max-device-width: 414px) and (-webkit-min-device-pixel-ratio: 1) {
+   .slider-form {
+    padding-top: 530px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .slider-form .nav-tabs a {
+    margin: 0 0 5px 15px;
+  }
+
+  .slider-form h2 {
+    margin: 0 0 20px;
+    padding: 0 15px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .section-padding {
+    padding: 50px 0;
+  }
+
+  nav.navbar {
+    padding: 0px;
+  }
+
+  .navbar-toggler {
+    padding: 2px 5px;
+  }
+
+  nav.navbar .navbar-nav .nav-link {
+    border-bottom: 1px solid #ececec;
+    padding: 10px 12px;
+    text-align: center;
+  }
+
+  .main-nav-right {
+    text-align: center;
+  }
+
+  nav.navbar .dropdown-menu .dropdown-item {
+    font-size: 13px;
+    padding: 7px 20px;
+    text-align: center;
+  }
+
+  .inner-header {
+    padding-top: 30% !important;
+  }
+
+  .carousel-indicators {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 16px;
+    display: none;
+  }
+
+  .banner-list {
+    padding: 0px 15px !important;
+  }
+
+  .banner-list h6 {
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 21px;
+    margin: 0 0 27px !important;
+  }
+
+  .banner-list .card {
+    margin-top: 30px;
+  }
+
+  .inner-page-form,
+  .slider-form {
+    bottom: 1px !important;
+    left: 1px;
+    right: 1px;
+    top: auto !important;
+  }
+
+  .inner-page-form .container,
+  .slider-form .container {
+    padding: 0;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+
+  .property-single-title {
+    text-align: center;
+  }
+
+  .property-single-title .text-right {
+    text-align: center !important;
+  }
+
+  .property-single-title .footer-social {
+    margin: 20px 0 0;
+  }
+
+  .btn {
+    font-size: 13px;
+    font-weight: bold;
+    padding: 9px 27px;
+  }
+
+  .tab-view .nav-link {
+    border-bottom: 2px solid #ececec;
+    margin: 0 1px;
+    padding: 15px 14px;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 br {
+    display: none;
+  }
+
+  .padding-card .card-body,
+  .sidebar-card .card-body {
+    padding: 18px;
+  }
+
+  .card-list-view .card-body,
+  .card-list-view .card-footer {
+    padding: 18px;
+  }
+
+  .footer h4 {
+    margin: 0 0 10px !important;
+  }
+
+  .footer h6 {
+    margin: 30px 0 8px !important;
+  }
+
+  .samar_top_filter {
+    text-align: center;
+  }
+
+  .samar_top_filter .float-right {
+    float: none !important;
+    margin: 3px 1px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 100%;
+  }
+
+  nav.navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-toggler {
+    padding: 2px 5px;
+  }
+
+  nav.navbar .navbar-nav .nav-link {
+    border-bottom: 1px solid #ececec;
+    padding: 10px 12px;
+    text-align: center;
+  }
+
+  .main-nav-right {
+    text-align: center;
+  }
+
+  nav.navbar .dropdown-menu .dropdown-item {
+    font-size: 13px;
+    padding: 7px 20px;
+    text-align: center;
+  }
+
+  .carousel-indicators {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 16px;
+  }
+
+  .inner-header {
+    padding-top: 20% !important;
+  }
+
+  .padding-card .card-body,
+  .sidebar-card .card-body {
+    padding: 18px;
+  }
+
+  .card-list-view .card-body,
+  .card-list-view .card-footer {
+    padding: 18px;
+  }
+
+  .section-padding {
+    padding: 60px 0;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+/* End Mobile Media */
