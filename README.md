@@ -11,4 +11,8 @@ In the project directory, you can run:
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+![alt text](https://github.com/harlyon/Homes/blob/master/1.png)
+
 ![alt text](https://github.com/harlyon/Homes/blob/master/2.png)
+
+![alt text](https://github.com/harlyon/Homes/blob/master/3.png)
