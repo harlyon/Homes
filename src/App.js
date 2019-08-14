@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 import ARoute from "./Components/Route";
 import Index from "./Components/Navbars/Index";
-
+import Footer from "./Components/Footer";
 function App() {
   return (
     <div>
@@ -11,6 +11,7 @@ function App() {
       <Router>
         <ARoute />
       </Router>
+      <Footer />
     </div>
   );
 }
