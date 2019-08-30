@@ -15,7 +15,7 @@ const Footer = () => {
               <p>
                 86 Petersham town, New South wales
                 <br />
-                Waedll Steet, Australia PA 6550
+                Waedll Steet, Australia PA 658
               </p>
               <p className="mb-0">
                 <a className="text-warning" href="/">
